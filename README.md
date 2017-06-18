@@ -114,8 +114,15 @@ public void onEvent(final String name, final ReadableMap info) {
 
 #### JavaScript
 ```javascript
+// Import EventBridge from the react-native-event-bridge native module
 import EventBridge from 'react-native-event-bridge';
 
+// Event listener need to define a rootTag contextType
+static contextTypes = {
+  rootTag: React.PropTypes.number,
+};
+
+// Add and remove as event listener
 componentDidMount() {
   // Register for any kind of event that will be sent from the native side
   this._eventSubscription = EventBridge.addEventListener(this, (name, info) => {
