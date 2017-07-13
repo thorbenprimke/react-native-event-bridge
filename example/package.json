@@ -13,8 +13,8 @@
   },
   "dependencies": {
     "invariant": "^2.2.2",
-    "react": "16.0.0-alpha.6",
-    "react-native": "0.43.4",
+    "react": "16.0.0-alpha.12",
+    "react-native": "0.46.2",
     "react-native-event-bridge": "file:../"
   },
   "devDependencies": {
